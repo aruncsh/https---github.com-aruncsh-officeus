@@ -7,6 +7,9 @@
   <title>CureSelect Heathcare LLC</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
       <link rel="stylesheet" href="css/style.css" />
+      <!-- <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' /> -->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script> -->
+
 </head>
 
 <body>
@@ -889,12 +892,12 @@
 </section> 
 <!-- teleeagle -->
 <section id="teleeagle">
-  <div class="container  mx-auto py-24 px-90 lg:0 bg-white w-auto ">
+  <div class="container  mx-auto py-24 px-6 lg:0 bg-white  ">
     <div class=" grid grid-cols-1 lg:grid-cols-2">
-      <div class="order-2 lg:order-1">  
-        <div class="flex flex-col justify-start">
-          <img src="images/brand-logo/teleeagle-logos.png" class="p-3 h-60 w-80">
-        <ul class="justify-start w-full text-black Bold p-4"   >
+      <div class="order-2 lg:order-1 w-3/12">  
+        <div class="flex flex-col justify-start  p-3" style="width: 100%;">
+          <img src="images/brand-logo/teleeagle-logos.png" class="p-1 h-60 w-80 ">
+        <ul class="justify-start w-full text-black text-xs p-3 font-semibold"  style="width: 60%;" >
           <li >• TeleEagle is a doctor-driven application that empowers doctors and hospitals to connect with specialists outside the hospital at a moment's notice.</li><br>
           <li>• Hospitals find it difficult to have specialists such as neurologists, psychiatrists, and cardiologists on call all the time.</li><br>
           <li>• TeleEagle allows hospitals to access our panel of highly experienced and board-certified specialists to evaluate and treat patients via telemedicine.</li><br>
@@ -903,8 +906,8 @@
         </ul>
       </div>
     </div>
-    <div class="order-2 lg:order-2">
-        <img src="images/product-image/telecart.png" alt="telecart" class="justify-start">
+    <div class="order-2 lg:order-2 w-7/12">
+        <img src="images/product-image/telecart.png" alt="telecart" class="justify-start item-start  " style="width: 180%; height: 100%;">
     </div>
     </div>
 </div>
@@ -1091,10 +1094,10 @@
           />
         </div>
       </div>
-      <div class="flex grid-cols-2 gap-16">
-        <div class=""> 
+      <div class="flex  " style="display: flex;">
+        <div class="" style="width: 33%;"> 
             <label for="industry" class="block uppercase font-semibold tracking-wide text-gray-700 text-xs font-heading mb-2">Industry</label>
-            <select id="industry" class="border border-gray-300 p-2 rounded-md w-full text-sm" >
+            <select id="industry" class="border border-gray-300 p-2 rounded-md w-full text-sm" style="width: 145%;" >
                  <option value="industry1">1</option>
                 <option value="industry2">2</option>
                 <option value="industry3">3</option> 
@@ -1102,9 +1105,9 @@
             </select>
         </div>
       
-        <div class="col-span-2">
+        <div class=" w-full " style="margin-left: 13%;">
             <label for="biggest-telemedicine" class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2">Biggest Telemedicine</label>
-            <input id="biggest-telemedicine" type="text" placeholder="Country" class="border border-gray-300 p-2 rounded-md w-full text-sm" />
+            <input id="biggest-telemedicine" type="text" placeholder="" class="border border-gray-300 p-2 rounded-md w-full text-sm" />
         </div>
     </div>
     
@@ -1147,6 +1150,10 @@
             <div class="ml-7">
                 <input type="checkbox" id="option8" name="option8" class="" />
                 <label for="option8">Pulmonology & Critical Care</label>
+            </div>
+            <div class="ml-7">
+              <input type="checkbox" id="option9" name="option9" />
+              <label for="option9">Others</label>
             </div>
           </div>
           </div>
@@ -1214,11 +1221,12 @@
     <!-- Contact Info -->
 
 <!--  -->
-<section id="demo" class="container mx-auto py-24 px-8 lg:px-0">
-  <div class="bg-white flex gap-6">
+<section id="demo">
+  <div class="container   mx-auto py-24 px-2 lg:px-0"> 
+  <div class="bg-white flex gap-16  ">
       <!-- Left side div (occupying 70% of the page) -->
-      <div class="w-7/12 w-full">
-          <h3 class="text-4xl font-bold mb-6" style="color: #d70635;">Request Demo</h3>
+      <div class="w-full p-6">
+          <h3 class="text-4xl font-bold mb-6 " style="color: #d70635;">Request Demo</h3>
           <div class="flex gap-6 mb-4 ">
             <div class="mb-4 flex-1">
               <label
@@ -1248,7 +1256,7 @@
               />
             </div>
         
-            <div class="mb-4 flex-1">
+            <div class="mb-3 flex-1">
               <label
                 for="email"
                 class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2"
@@ -1262,43 +1270,28 @@
               />
             </div>
           </div>
-          <div class="flex gap-6 mb-4">
-            <div class="mb-4 flex-1">
-              <label
-                for="mobile"
-                class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2"
-                >Mobile</label
-              >
-              <input
+          <div class="flex  " style="display: flex;">
+            <div class="" style="width: 33%;"> 
+                <label for="industry" class="block uppercase font-semibold tracking-wide text-gray-700 text-xs font-heading mb-2">Mobile</label>
+                <input
                 id="mobile"
                 type="tel"
                 placeholder=""
-                class="border border-gray-300 p-2 rounded-md w-full text-sm"
+                class="border border-gray-300 p-2 rounded-md w-full text-sm" style="width: 145%;"
               />
             </div>
-        
-            <div class="mb-4 flex-1">
-              <label
-                for="company-name"
-                class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2"
-                >Company Name</label
-              >
-              <input
-                id="company-name"
-                type="text"
-                placeholder=""
-                class="border border-gray-300 p-2 rounded-md w-full text-sm"
-              />
+          
+            <div class=" w-full " style="margin-left: 13%;">
+                <label for="biggest-telemedicine" class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2">Company Name </label>
+                <input id="biggest-telemedicine" type="text" placeholder="" class="border border-gray-300 p-2 rounded-md w-full text-sm" />
             </div>
-          </div>
+        </div>
       <!-- </div> -->
-     
-    
-      <div class="mt-10">
+      <div class="mt-12 ">
         <h3 class="block uppercase text-gray-700 text-2xl font-bold mb-2">
           Interests
         </h3>
-        <div class="grid grid-cols-5">
+        <div class="grid ">
           <div class="flex flex-wrap  mt-2 " style="color: #898989">
             <div>
               <input
@@ -1348,7 +1341,6 @@
       </div>
       <!-- calender -->
       <div class="">
-
       </div>
     <!--  -->
         <!-- Submit button -->
@@ -1358,16 +1350,12 @@
           <button type="button" onclick="submitForm()" class="container bg-red-500 hover:bg-blue-700 text-white justify-center item-center font-bold py-2 px-4 rounded " style="background-color: #d70635;">Submit</p>
           </div> 
       </div>
-      <!-- </div> -->
-     
-      
-      <div class="w-3/12 ml-auto mr-auto">
-        <div class="flex gap-3 flex-col justify-start items-start">
-          <img src="images/banner/doctor-with-phone.png">
-        </div>
+        <!-- </div>  -->
+      <div class="ml-auto mt-6 justify-end item-end " style="width: 50%; height: 80%;">
+            <img src="images/specialty/request-demo.png" class="ml-auto" alt="">   
       </div>
-
-       
+  </div>       
+</div>
 </div>
 </section>
 
