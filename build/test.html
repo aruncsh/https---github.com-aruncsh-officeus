@@ -1,193 +1,230 @@
 <link rel="stylesheet" href="css/style.css" />
-<section id="ai-ml" class="bg-red-700">
-  <img src="images/ai-ml/ai-ml-rpa-bg.png" alt="banner" />
-  <br />
-  <div class="container mx-auto py-10 px-4 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16">
-      <div class="order-2 lg:order-1">
-        <div class="flex flex-col lg:flex-row gap-6 items-start">
-          <img
-            src="images/ai-ml/rpa-technology.png"
-            class="block lg:hidden object-scale-down w-24"
-            alt="technology"
-          />
-          <div>
-            <h3 class="text-white text-2xl font-semibold mb-4">Technology</h3>
-            <p class="text-white">
-              Enhancing Patient Safety with Reliable, Secure Technology
-            </p>
-            <br />
-            <p class="text-white">
-              Telemedicine needs to encompass more than just technology For this
-              reason, we developed our company to provide the greatest patient
-              care. Providers can quickly, easily, and affordably implement,
-              develop, and improve telemedicine program across all care
-              locations
-            </p>
-          </div>
+<!-- <section id="Specialties" class="px-4 lg:px-0">
+  <div class="container mx-auto py-10 lg:py-20">
+    <h3 class="text-4xl font-bold p-6 item-start text-red-600">
+      Multi Specialty Telemedicine
+    </h3>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-15">
+      <div class="flex flex-row lg:flex-col text-center p-6">
+        <div
+          class="container border-red-700 text-red-100 text-center mb-4 lg:mb-0 lg:border-r-0 lg:border-b-0 lg:rounded-tl-lg lg:rounded-bl-lg lg:rounded-tr-none lg:rounded-br-none lg:mr-4 cursor-pointer hover:bg-red-700 hover:text-gray-100"
+          onclick="showContent('neurology')"
+          id="Neurology"
+        >
+          Tele Neurology
         </div>
-      </div>
-      <div class="text-gray-700 order-1 lg:order-2">
-        <div class="flex flex-col lg:flex-row gap-6 items-start">
-          <img
-            src="images/ai-ml/rpa-process.png"
-            class="block lg:hidden object-scale-down w-24"
-            alt=""
-          />
-          <div>
-            <h3 class="text-white text-2xl font-semibold mb-4">Process</h3>
-            <p class="text-white">
-              CureSelect offers telemedicine services in neurology
-            </p>
-            <p class="text-white">
-              behavioral health, hospitalist medicine, pulmonary and critical
-              care, infectious disease, maternal fetal medicine, cardiology,
-              nephrology, and endocrinology in collaboration with hospitals,
-              outpatient clinics, and physician groups
-            </p>
-          </div>
+        <div
+          class="container border-red-700 text-red-100 text-center mb-4 lg:mb-0 lg:border-r-0 lg:border-b-0 lg:rounded-tl-none lg:rounded-bl-none lg:rounded-tr-lg lg:rounded-br-lg lg:mr-4 cursor-pointer hover:bg-red-700 hover:text-gray-100"
+          onclick="showContent('cardiology')"
+          id="Cardiology"
+        >
+          Tele Cardiology
+        </div>
+        <div
+          class="container border-red-700 text-red-100 text-center lg:border-r-0 lg:border-b-0 lg:rounded-tl-none lg:rounded-bl-none lg:rounded-tr-lg lg:rounded-br-lg cursor-pointer hover:bg-red-700 hover:text-gray-100"
+          onclick="showContent('psychiatry')"
+          id="Psychiatry"
+        >
+          Tele Psychiatry
         </div>
       </div>
     </div>
-  </div>
-  <!--  -->
-  <div class="container text-center py-10 px-4 lg:px-20" id="robotic">
-    <h2 class="text-white text-3xl font-semibold">
-      Robotic Process Automation
-    </h2>
-    <p class="text-white">
-      Streamline Data Integration with RPA for Seamless CSH Rounds to EHR Data
-      Transfer
-    </p>
-    <br />
-    <p class="text-white text-sm">
-      Introduction: In the fast-paced world of healthcare, the efficient
-      transfer of critical patient data is paramount. Robotic Process Automation
-      (RPA) emerges as a game- changer, automating the seamless push of data
-      from Clinical Scheduling and History (CSH) Rounds to Electronic Health
-      Records (EHR). This not only reduces manual efforts but also enhances
-      accuracy and ensures real-time accessibility of vital patient information.
-    </p>
-  </div>
-  <!--  -->
-  <div class="container mx-auto py-10 px-4 lg:px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-      <!-- Row 1 -->
-      <div class="flex flex-col gap-6 items-start">
-        <img
-          src="images/ai-ml/rpa-efficiency.png"
-          class="block lg:hidden object-scale-down w-20"
-          alt="technology"
-        />
-        <div class="text-left">
-          <h4 class="text-white text-lg font-bold mb-3">
-            Efficiency Enhancement
-          </h4>
-          <ul class="text-white list-disc">
-            <li>
-              Accelerate data transfer. RPA automates the extraction and
-              transmission of CSH data, minimizing delays and improving overall
-              operational efficiency.
-            </li>
-            <li>
-              Streamline workflows: Eliminate manual data entry, allowing
-              healthcare professionals to focus on patient care rather than
-              administrative tasks
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex flex-col gap-6 items-start">
-        <img
-          src="images/ai-ml/rpa-realtime.png"
-          class="block lg:hidden object-scale-down w-20"
-          alt=""
-        />
-        <div>
-          <h4 class="text-white text-lg font-bold mb-3">
-            Real-time Accessibility
-          </h4>
-          <ul class="text-white list-disc">
-            <li>
-              Instant data availability: RPA enables real-time data transfer,
-              ensuring that healthcare providers have timely access to patient
-              information during and after CSH rounds
-            </li>
-            <li>
-              Enhance patient care: Faster access to accurate data facilitates
-              quicker decision-making, leading to improved patient outcomes and
-              satisfaction
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-      <!-- Row 2 -->
-      <div class="flex flex-col gap-6 items-start">
-        <img
-          src="images/ai-ml/rpa-data.png"
-          class="block lg:hidden object-scale-down w-20"
-          alt=""
-        />
-        <div>
-          <h4 class="text-white text-lg font-bold mb-3">
-            Data Accuracy and Consistency
-          </h4>
-          <ul class="text-white list-disc">
-            <li>
-              Error-free data transfer: RPA ensures accuracy by eliminating the
-              risk of manual data entry errors, reducing the likelihood of
-              discrepancies between CSH rounds and EHR data.
-            </li>
-            <li>
-              Consistent updates: Maintain up-to-date patient records, fostering
-              better decision-making and improving the overall quality of
-              healthcare services.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex flex-col gap-6 items-start">
-        <img
-          src="images/ai-ml/rpa-cost.png"
-          class="block lg:hidden object-scale-down w-20"
-          alt=""
-        />
-        <div>
-          <h4 class="text-white text-lg font-bold mb-3">Cost Savings:</h4>
-          <ul class="text-white list-disc">
-            <li>
-              Resource optimization: Automating data transfer reduces the need
-              for extensive manual labor, allowing healthcare organizations to
-              allocate resources more effectively.
-            </li>
-            <li>
-              Minimize errors: Reducing errors through RPA minimizes the costs
-              associated with data correction and ensures compliance with
-              regulatory standards
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-      <!-- Row 3 -->
-      <div class="flex flex-col gap-6 items-start">
-        <img
-          src="images/ai-ml/rpa-how-it-works.png"
-          class="block lg:hidden object-scale-down w-20"
-          alt=""
-        />
-        <div>
-          <h4 class="text-white text-lg font-bold mb-4">How it Works:</h4>
-          <ul class="list-disc">
-            <li><span class="font-bold">Data Extraction: </span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <div id="content-area"></div>
   </div>
 </section>
+
+<script>
+  showContent("neurology");
+
+  function showContent(type) {
+    let content = "";
+    if (type === "neurology") {
+      content = `
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+              <div class="order-2 lg:order-1 px-3">
+                  <div class="text-content md:w-3/4 mx-auto mt-4 lg:mt-0 lg:ml-0 lg:mr-auto">
+                      <p class="list-disc text-gray-700 mb-4"><li>Any neurological emergency that arises anywhere in the hospital is covered by our emergency  teleNeurology service, including acute stroke.</li></p>
+                      <p class="list-disc text-gray-700 mb-4 "><li>Although the most common reason for emergency teleNeurology is stroke, our neurologists have extensive experience managing a wide range of neurologic conditions, both urgent and non-urgent. We offer quick access to a board-certified, experienced neurologist in real time.</li></p>
+                  </div>
+              </div>
+              <div class="text-gray-700 order-1 lg:order-2 flex justify-center items-center">
+                  <img src="images/Specialty/TeleNeutology.png" alt="Neutology" style="max-height: 650px; max-width: 800px;">
+              </div>
+          </div> `;
+    } else if (type === "cardiology") {
+      content = `
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+              <div class="order-2 lg:order-1 px-3">
+                  <div class="text-content md:w-3/4 mx-auto mt-4 lg:mt-0 lg:ml-0 lg:mr-auto">
+                      <p class="list-disc text-gray-700 mb-4"><li>Diagnose, treat, and manage patients with congestive heart failure, arrhythmias, chest pain, and other heart-related conditions.</li></p><br>
+                      <p class="list-disc text-gray-700 mb-4"><li>For both daytime and overnight coverage, our TeleCart service line offers both hybrid (in-person and telemedicine) and solely telemedicine programs.</li></p><br>
+                      <p class="list-disc text-gray-700 mb-4"><li>Our TeleCart enables hospital staff to oversee every facet of an inpatient's care and work with specialists to coordinate hospital usage in order to maximize results and standards.</li></p><br>
+                  </div>
+              </div>
+              <div class="text-gray-700 order-1 lg:order-2 flex justify-center items-center">
+                  <img src="images/Specialty/TeleCardiology.png" alt="cardiology" style="max-height: 600px; max-width: 100%;">
+              </div>
+          </div>
+          `;
+    } else if (type === "psychiatry") {
+      content = `
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+              <div class="order-2 lg:order-1 px-3">
+                  <div class="text-content md:w-3/4 mx-auto mt-4 lg:mt-0 lg:ml-0 lg:mr-auto">
+                      <p class="list-disc mb-4"><li>Our Software helps mental well-being meet modern convenience. We understand the significance of mental health and offer a pioneering telepsychiatry service designed to break down barriers to</li></p><br>
+                      <p class="list-disc mb-4"><li>Our platform connects individuals with licensed psychiatrists from the comfort of their own space, ensuring accessible and timely mental health support.</li></p><br>
+                      <p class="list-disc mb-4"><li>With a seamless interface and a compassionate team, we're committed to providing personalized, confidential, and high-quality psychiatric care to help you thrive.</li></p><br>
+                      <p class="list-disc mb-4"><li>Experience the future of mental health care with our innovative telemedicine solutions with TeleEagle</li></p><br>
+                  </div>
+              </div>
+              <div class="text-gray-700 order-1 lg:order-2 flex justify-center items-center">
+                  <img src="images/Specialty/TelePsychiatric.png" alt="psychiatry" style="max-height: 600px; max-width: 200%;">
+              </div>
+          </div>
+          `;
+    }
+    document.getElementById("content-area").innerHTML = content;
+  }
+</script> -->
+
+<div class="container mx-auto py-20 lg:py-20">
+  <h3
+    class="text-4xl font-bold p-6 item-start justify-center text-center text-red-700"
+    style="color: #d70033"
+  >
+    Multi Specialty <br />Telemedicine
+  </h3>
+
+  <div class="grid grid-cols-1 gap-6 p-6">
+    <div
+      class="text-content justify-center md:justify-start md:w-3/4 p-3 mx-auto mt-4 text-start md:text-left"
+    >
+      <div
+        class="container p-6 border-red-700 bg-red-700 text-red-100 text-center mb-4 cursor-pointer hover:bg-red-700 hover:text-gray-100"
+        id="Neurology"
+      >
+        Tele Neurology
+      </div>
+      <div class="flex justify-center items-center">
+        <img
+          src="images/Specialty/TeleNeutology.png"
+          alt="Neurology"
+          class="w-64 h-auto border-r-9"
+        />
+      </div>
+      <p class="list-disc text-gray-700 text-xl mb-4 mt-2">
+        Any neurological emergency that arises anywhere in the hospital is
+        covered by our emergency teleNeurology service, including acute stroke.
+      </p>
+      <p class="list-disc text-xl text-gray-700 mb-4">
+        Although the most common reason for emergency teleNeurology is stroke,
+        our neurologists have extensive experience managing a wide range of
+        neurologic conditions, both urgent and non-urgent. We offer quick access
+        to a board-certified, experienced neurologist in real time.
+      </p>
+    </div>
+  </div>
+  <!--  -->
+  <div class="grid grid-cols-1 gap-8 p-6">
+    <div
+      class="container p-8 border-red-700 text-red-100 text-center mb-4 cursor-pointer hover:bg-red-700 hover:text-gray-100"
+      id="Cardiology"
+    >
+      Tele Cardiology
+    </div>
+    <div class="flex justify-center items-center">
+      <img
+        src="images/Specialty/TeleCardiology.png"
+        alt="Cardiology"
+        class="w-64 h-auto"
+      />
+    </div>
+    <div class="text-content md:w-3/4 mx-auto mt-4 p-3 ml-0">
+      <p class="list-disc text-xl text-gray-700 mb-4">
+        Diagnose, treat, and manage patients with congestive heart failure,
+        arrhythmias, chest pain, and other heart-related conditions.
+      </p>
+      <p class="list-disc text-xl text-gray-700 mb-4">
+        For both daytime and overnight coverage, our TeleCart service line
+        offers both hybrid (in-person and telemedicine) and solely telemedicine
+        programs.
+      </p>
+      <p class="list-disc text-xl text-gray-700 mb-4">
+        Our TeleCart enables hospital staff to oversee every facet of an
+        inpatient's care and work with specialists to coordinate hospital usage
+        in order to maximize results and standards.
+      </p>
+    </div>
+  </div>
+  <!--  -->
+  <div class="grid grid-cols-1 gap-6">
+    <div
+      class="container border-red-700 text-red-100 text-center cursor-pointer hover:bg-red-700 hover:text-gray-100"
+      id="Psychiatry"
+    >
+      Tele Psychiatry
+    </div>
+    <div class="flex justify-center items-center">
+      <img
+        src="images/Specialty/TelePsychiatric.png"
+        alt="Psychiatry"
+        class="w-64 h-auto"
+      />
+    </div>
+    <div class="text-content md:w-3/4 mx-auto mt-4 p-3">
+      <p class="list-disc text-xl mb-4">
+        Our Software helps mental well-being meet modern convenience. We
+        understand the significance of mental health and offer a pioneering
+        telepsychiatry service designed to break down barriers to
+      </p>
+      <p class="list-disc text-xl mb-4">
+        Our platform connects individuals with licensed psychiatrists from the
+        comfort of their own space, ensuring accessible and timely mental health
+        support.
+      </p>
+      <p class="list-disc text-xl mb-4">
+        With a seamless interface and a compassionate team, we're committed to
+        providing personalized, confidential, and high-quality psychiatric care
+        to help you thrive.
+      </p>
+      <p class="list-disc text-xl mb-4">
+        Experience the future of mental health care with our innovative
+        telemedicine solutions with TeleEagle
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+<
+<div class="flex flex-wrap w-full">
+  <div class="mb-4 flex-1" style="width: 30%">
+    <label
+      for="mobile"
+      class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2"
+      >Mobile</label
+    >
+    <input
+      id="mobile"
+      type="tel"
+      placeholder=""
+      class="border border-gray-300 p-2 rounded-md w-full text-sm"
+    />
+  </div>
+
+  <div class="flex-1 px-3 mb-6" style="width: calc(70% - 20.33% - 10px)">
+    <!-- Adjust width dynamically -->
+    <label
+      for="biggest-telemedicine"
+      class="block uppercase tracking-wide font-semibold text-gray-700 text-xs font-heading mb-2"
+      >Biggest Telemedicine</label
+    >
+    <input
+      id="biggest-telemedicine"
+      type="text"
+      placeholder="Country"
+      class="border border-gray-300 p-2 rounded-md w-full text-sm"
+    />
+  </div>
+</div>
+
